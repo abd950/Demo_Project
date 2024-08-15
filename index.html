@@ -6,6 +6,7 @@
     <title>FluentEase</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/book.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -30,7 +31,7 @@
         </div>
 
         <div class="home-img">
-            <img src="image/logo1.png" alt="">
+            <img src="image/logo1.png" alt="FluentEase Logo">
         </div>
     </section>
 
@@ -51,6 +52,7 @@
     </section>
 
 
+   
     <section class="translation" id="translation">
         <h2 class="heading">Translate <span>Text</span></h2>
         <div class="translation-form">
@@ -59,12 +61,12 @@
             <div class="language-selectors">
                 <label for="source-language-select">Source Language:</label>
                 <select id="source-language-select">
-                    option value="auto">Detect Language</option>
+                    <option value="auto">Detect Language</option>
                     <option value="en">English</option>
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
                     <option value="de">German</option>
-                    <option value="zh">Chinese</option>
+                    <option value="zh-Hans_CN">Chinese</option>
                     <option value="it">Italian</option>
                     <option value="pt">Portuguese</option>
                     <option value="ru">Russian</option>
@@ -117,7 +119,6 @@
                     <option value="tk">Turkmen</option>
                     <option value="kz">Kazakh</option>
                     <option value="dv">Divehi</option>
-
                 </select>
     
                 <label for="target-language-select">Target Language:</label>
@@ -126,7 +127,7 @@
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
                     <option value="de">German</option>
-                    <option value="zh">Chinese</option>
+                    <option value="zh-Hans_CN">Chinese</option>
                     <option value="it">Italian</option>
                     <option value="pt">Portuguese</option>
                     <option value="ru">Russian</option>
@@ -179,13 +180,13 @@
                     <option value="tk">Turkmen</option>
                     <option value="kz">Kazakh</option>
                     <option value="dv">Divehi</option>
-
                 </select>
             </div>
     
             <button id="translate-btn" class="gradient-btn">Translate</button>
             <button id="speak-btn" class="gradient-btn">Speak</button>
             <button id="stop-btn" class="gradient-btn">Stop</button>
+            <button id="speak-target-btn" class="gradient-btn">Speak Target</button> <!-- New Speak Target button -->
             <div id="translated-text"></div>
         </div>
     </section>
@@ -229,26 +230,26 @@
     
     <section class="contact" id="contact">
         <h2 class="heading">About <span>Us</span></h2>
-
-        <div class="about-us">
-            <p>We Are Abdourahmane, Donavan, And Nana, The Team Behind This Innovative 
-                Dictionary Website Designed For Everyone To Use. Our Journey Was Not Without Its Challenges,
-                 But Our Collaborative Spirit Turned Obstacles Into Stepping Stones.
-            </p>
+    <div class="about-us">
+        <p>We Are Abdourahmane, Donavan, And Nana, The Team Behind This Innovative 
+            Dictionary Website Designed For Everyone To Use. Our Journey Was Not Without Its Challenges,
+             But Our Collaborative Spirit Turned Obstacles Into Stepping Stones.
+        </p>
+                <br>
+        <p>Working Together, We Tackled Problems Head-On, United By The Belief That "Impossible" 
+                Has No Place In Our Team. We Supported Each Other Through The Tough Times, Celebrated Our Successes, And Learned From Every Setback.
+                 Each Of Us Brought Unique Skills And Perspectives, Creating A Synergy That Made Our Vision A Reality.
+        </p>
                  <br>
-            <p>Working Together, We Tackled Problems Head-On, United By The Belief That "Impossible" 
-                    Has No Place In Our Team. We Supported Each Other Through The Tough Times, Celebrated Our Successes, And Learned From Every Setback.
-                     Each Of Us Brought Unique Skills And Perspectives, Creating A Synergy That Made Our Vision A Reality.
-            </p>
-                     <br>
-            <p>Our Collective Effort And Determination Allowed Us To Overcome Numerous Hurdles In Creating This Website.
-                     We Are Proud Of What We Have Achieved Together 
-                     And Are Committed To Continuing Our Mission Of Helping People Navigate The Complexities Of Foreign Languages.
-            </p>
-                     <br>
-            <p>Thank You For Joining Us On This Journey. Together, We Have Proven That With Teamwork, We Can Achieve Great Things.
-            </p>
-         </div>
+        <p>Our Collective Effort And Determination Allowed Us To Overcome Numerous Hurdles In Creating This Website.
+                 We Are Proud Of What We Have Achieved Together 
+                 And Are Committed To Continuing Our Mission Of Helping People Navigate The Complexities Of Foreign Languages.
+        </p>
+                 <br>
+        <p>Thank You For Joining Us On This Journey. Together, We Have Proven That With Teamwork, We Can Achieve Great Things.
+        </p>
+     </div>
+
     </section>
 
     <script src="script.js"></script>

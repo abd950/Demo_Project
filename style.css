@@ -219,3 +219,19 @@ html{
     width: 10vw;
     border-radius: 50%;
  }
+
+
+.gradient-btn {
+    background: linear-gradient(45deg, #00bcd4, #009688);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(45deg, #009688, #00bcd4);
+}

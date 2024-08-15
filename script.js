@@ -37,15 +37,12 @@ document.getElementById('define-btn').addEventListener('click', function() {
 });
 
 
-
 document.getElementById('speak-btn').addEventListener('click', function() {
     var textToSpeak = document.getElementById('text-to-translate').value;
     var targetLanguage = document.getElementById('target-language-select').value;
-    
-   
+
     var utterance = new SpeechSynthesisUtterance(textToSpeak);
 
-   
     switch(targetLanguage) {
         case 'en':
             utterance.lang = 'en-US';
@@ -59,17 +56,72 @@ document.getElementById('speak-btn').addEventListener('click', function() {
         case 'de':
             utterance.lang = 'de-DE';
             break;
-      
         default:
             utterance.lang = 'en-US';
     }
 
-   
     window.speechSynthesis.speak(utterance);
 });
 
 document.getElementById('stop-btn').addEventListener('click', function() {
+    window.speechSynthesis.cancel();
+});
+
+document.getElementById('speak-target-btn').addEventListener('click', function() {
+    var translatedText = document.getElementById('translated-text').innerText;
+    var targetLanguage = document.getElementById('target-language-select').value;
+
+    var utterance = new SpeechSynthesisUtterance(translatedText);
+
+    switch(targetLanguage) {
+        case 'en':
+            utterance.lang = 'en-US';
+            break;
+        case 'es':
+            utterance.lang = 'es-ES';
+            break;
+        case 'fr':
+            utterance.lang = 'fr-FR';
+            break;
+        case 'de':
+            utterance.lang = 'de-DE';
+            break;
+        default:
+            utterance.lang = 'en-US';
+    }
+
+    window.speechSynthesis.speak(utterance);
+});
+
+
+document.getElementById('speak-btn').addEventListener('click', function() {
+    var textToSpeak = document.getElementById('text-to-translate').value;
+    var targetLanguage = document.getElementById('target-language-select').value;
+    
    
+    var utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+    switch(targetLanguage) {
+        case 'en':
+            utterance.lang = 'en-US';
+            break;
+        case 'es':
+            utterance.lang = 'es-ES';
+            break;
+        case 'fr':
+            utterance.lang = 'fr-FR';
+            break;
+        case 'de':
+            utterance.lang = 'de-DE';
+            break;
+        default:
+            utterance.lang = 'en-US';
+    }
+
+    window.speechSynthesis.speak(utterance);
+});
+
+document.getElementById('stop-btn').addEventListener('click', function() {
     window.speechSynthesis.cancel();
 });
 
